@@ -1,0 +1,94 @@
+/* Reset default margin */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: azure;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: #12686b;
+  padding: 10px 20px;
+}
+
+.logo-img {
+  margin-right: 10%;
+  width: 4%;
+  height: 4%;
+  border-radius: 40%;
+  object-fit: contain;
+}
+
+.login-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.login-button:hover {
+  background-color: #44aa49a2;
+}
+
+h4 {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+}
+
+.image1 {
+  width: 45%;
+  height: 45%;
+  margin-left: 5%;
+}
+
+.image2 {
+  width: 45%;
+  height: 45%;
+}
+
+.tabss {
+  width: 40%;
+  margin-left: 5%;
+  height: 5%;
+}
+
+.vision {
+  color: white;
+  margin-top: 2%;
+  justify-content: center;
+  width: 40%;
+  height: 15%;
+  border-radius: 15px;
+}
+
+.mision {
+  color: white;
+  margin-top: 2%;
+  justify-content: center;
+  border-radius: 15px;
+  width: 40%;
+  height: 15%;
+}
+
+.main {
+  background-color: #12686b;
+  height: 20%;
+  width: 90.5%;
+  margin-left: 5%;
+}
+
+.why {
+  border-radius: 15px;
+  height: 80%;
+  width: 90.5%;
+  background-color: azure;
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
