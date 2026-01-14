@@ -4,132 +4,234 @@
 <head>
   <meta charset="UTF-8">
   <title>Nboti Tech Initiative</title>
+
+  <!-- Browser tab logo -->
+  <link rel="icon" type="image/png" href="nb-tech logo.png">
+
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Remove navbar highlights */
+    .navbar a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .navbar a:hover,
+    .navbar a:active,
+    .navbar a:focus {
+      text-decoration: none;
+      color: inherit;
+      outline: none;
+      background: none;
+    }
+  </style>
 </head>
 
 <body>
+
+  <!-- NAVBAR -->
   <div class="navbar">
     <img src="nb-tech logo.png" alt="Logo" class="logo-img">
-    <h4>NBOTI TECH INITIATIVE</h4>
-    <a href="index.html">
-      <h4 class="home-tab">Home</h4>
+    <h2 style="color: rgb(250, 234, 234);">NBOTI TECH INITIATIVE</h2>
+
+    <a href="#home">
+      <h4>Home</h4>
     </a>
-    <a href="index.html">
-      <h4 class="about-tab">About</h4>
+    <a href="#about">
+      <h4>About</h4>
     </a>
-    <a href="index.html">
-      <h4 cl`ass="services-tab">Services</h4>
+    <a href="#services">
+      <h4>Services</h4>
     </a>
-    <a href="index.html">
-      <h4 class="team-tab">Team</h4>
+    <a href="#team">
+      <h4>Team</h4>
     </a>
-    <a href="index.html">
-      <h4 class="contact-tab">Contact</h4>
+    <a href="#contact">
+      <h4>Contact</h4>
     </a>
-    <button class="signup-button" style="margin-left: 2%;">signup</button>
+
+    <button class="signup-button" style="margin-left:2%;">Signup</button>
     <button class="login-button">Login</button>
-
   </div>
 
-  <div class="why" style="display: flex; justify-content: space-around;">
-    <div style="width: 40%;">
-      <img src="globe.jpeg" alt="glo" style="width: 100%; height: 100%; padding-top:10%;">
+  <!-- HOME SECTION -->
+  <div id="home"
+    style="display:flex; justify-content:space-around; align-items:stretch; padding:4%; flex-wrap:wrap; gap:20px;">
+
+    <!-- SLIDESHOW (replaces first image) -->
+    <div style="width:45%; height:450px; position:relative; overflow:hidden; border-radius:12px;">
+      <img class="slide" src="we and Dir.jpg"
+        style="width:100%; height:100%; object-fit:cover; position:absolute; opacity:1;">
+      <img class="slide" src="nb-1.jpeg"
+        style="width:100%; height:100%; object-fit:cover; position:absolute; opacity:0;">
+      <img class="slide" src="nb-5.jpeg"
+        style="width:100%; height:100%; object-fit:cover; position:absolute; opacity:0;">
+      <img class="slide" src="EB1.jpeg"
+        style="width:100%; height:100%; object-fit:cover; position:absolute; opacity:0;">
+      <img class="slide" src="Doayin1.jpeg"
+        style="width:100%; height:100%; object-fit:cover; position:absolute; opacity:0;"><img class="slide"
+        src="nb-3.jpeg" style="width:100%; height:100%; object-fit:cover; position:absolute; opacity:0;"><img
+        class="slide" src="EB1.jpeg" style="width:100%; height:100%; object-fit:cover; position:absolute; opacity:0;">
     </div>
-    <div style="width: 50%; border-radius: 15px; background-color: rgb(240, 255, 251); padding: 1%;">
-      <h2 style="color: grey ;">WHY NBOTI TECH INITIATIVE?</h2>
-      <p style="color: grey ;">
-        This is an initiative that has been established with the goal of introducing young and great minds from
-        basic level, to real life technology, innovation and problem-solving skills.
-        <br><br>
-        This Initiative is meant to get basic school learners to understand some of the concepts they learn in
-        Mathematics, Integrated Science and Computing and relate them to real life situations. Hence, the introduction of
-        Robotics.
-        <br><br>
-        Robotics is a branch of engineering that deals with designing, programming, constructing, operating and using
-        machines to solve human needs in health, manufacturing, agriculture, construction etc.
-        <br><br>
-        Considering the Educational curriculum, my team and I believe that nurturing these young ones towards becoming
-        problem solvers, rather than people waiting to be employed is the best way forward.
-        <br><br>
-        You would agree with me, that the kinds of problems you are able to solve in the society determines the level of
-        impact and wealth you will have.
+
+    <!-- VIDEO -->
+    <div style="width:45%; height:450px;">
+      <video controls style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+        <source src="GVA end of year program.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div id="about" style="display:flex; justify-content:space-around;">
+    <div style="width:40%;">
+      <img src="traction.png" style="width:100%; border-radius:15px ">
+    </div>
+    <div style="width:40%; background:#f0fffb; padding:1%; border-radius:15px;">
+      <h2 style="color:grey;">WHY NBOTI TECH INITIATIVE?</h2>
+      <p style="color:grey;">
+        Introducing basic school learners to Robotics, AI and STEM education.
+        Currently training 350+ students across the Upper East Region.<br><br>
+        We seek to partner with Proprietors or Headtechers to deliver STEM/Robotics lessons for students at a
+        fee.<br><br>
+        We begun as a weekend class at the Great Victroy E-leraning center since 2024, and have fast incorporated into 4
+        schools as a fully running curriculum. <br><br>Our Leraners are excited that they are able to create amazing
+        things from
+        scratch.
       </p>
     </div>
   </div>
 
-  <br><br>
-  <div class="main" style="display: flex; justify-content: space-around;">
-    <div class="vision">
-      <h2>GOAL</h2>
-      <p>To increase Technology Literacy in rural Areas to 80% by 2035</p>
-    </div>
-    <div class="mision">
-      <h3>OBJECTIVES</h3>
-      <p>To guide students towards Technology driven ideas and innovations
-        <br><br>
-        To increase access of JHS students to ICT skills
-        <br><br>
-        To guide students towards Technology driven ideas and innovations
+  <!-- SERVICES -->
+  <h1 id="services" style="text-align:center; color:grey;">Check out our Services</h1>
+
+  <div style="display:flex; justify-content:space-around; flex-wrap:wrap; gap:20px; padding:2%;">
+    <div style="background:#12686b; width:40%; padding:2%; border-radius:15px; color:white;">
+      <h3>ROBOTICS FOR BASIC SCHOOL STUDENTS</h3>
+      <p>
+        Artificial Intelligence<br><br>
+        Arduino & IoT<br><br>
+        Practical ICT Skills<br><br>
+        Programming & Web Development
       </p>
     </div>
 
-  </div>
-  <h1 style="text-align: center; color: grey;">Check out our Services</h1>
-
-  <!-- Flex container for services -->
-  <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; padding: 2%;">
-
-    <div style="background-color: #12686b; width: 40%; padding: 2%; border-radius: 15px; color: white;">
-      <h3>ROBOTICS FOR JHS STUDENTS.</h3>
-      <p style="font-size: 16px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-        Our Robotics for JHS covers a comprehensive blend of:
-        <br><br>
-        - Practical ICT skills and navigation around the keyboard;
-        <br><br>
-        - Basic programming skills in C++;
-        <br><br>
-        - Basic web development (HTML & CSS);
-        <br><br>
-        - Arduino Uno starter kit training;
-        <br><br>
-        - Programming of IoT devices to achieve specific tasks.
+    <div style="background:#12686b; width:40%; padding:2%; border-radius:15px; color:white;">
+      <h3>OUR PARTNER SCHOOLS</h3>
+      <p>
+        Great Victory Academy<br><br>
+        Eastbrown Community School<br><br>
+        Doayin Academy<br><br>
+        OLA School Complex
       </p>
     </div>
+  </div>
 
-    <div style="background-color: #12686b; width: 40%; padding: 2%; border-radius: 15px; color: white;">
-      <h3>OUR PARTNER SCHOOLS.</h3>
-      <p style="font-size: 16px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-        GREAT VICTORY ACADEMY <br><br>
-        EASTBROWN COMMUNITY SCHOOL <br><br>
-        DOAYIN ACADEMY <br><br>
-        - Mobile app integration with Arduino;
-        <br><br>
-        - Sensors and automation for smart systems;
-        <br><br>
-        - Project-based learning to foster innovation.
-      </p>
+  <!-- 4 IMAGE GRID -->
+  <h1 style="text-align:center; color:grey;">Our Partner Schools</h1>
+
+  <div style="display:flex; justify-content:space-around; flex-wrap:wrap; gap:20px; padding:4%;">
+
+    <div style="width:45%; height:450px; position:relative;">
+      <img src="nb-1.jpeg" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+      <div
+        style="position:absolute; bottom:0; width:90%; background:rgba(0,0,0,0.6); color:white; text-align:center; padding:10px;">
+        Great Victory Academy
+      </div>
+    </div>
+
+    <div style="width:45%; height:450px; position:relative;">
+      <img src="EB1.jpeg" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+      <div
+        style="position:absolute; bottom:0; width:90%; background:rgba(0,0,0,0.6); color:white; text-align:center; padding:10px;">
+        Eastbrown Community School
+      </div>
+    </div>
+
+    <div style="width:45%; height:450px; position:relative;">
+      <img src="Doayin1.jpeg" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+      <div
+        style="position:absolute; bottom:0; width:90%; background:rgba(0,0,0,0.6); color:white; text-align:center; padding:10px;">
+        Doayin Academy
+      </div>
+    </div>
+
+    <div style="width:45%; height:450px; position:relative;">
+      <img src="we and Dir.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+      <div
+        style="position:absolute; bottom:0; width:90%; background:rgba(0,0,0,0.6); color:white; text-align:center; padding:10px;">
+        OLA School Complex
+      </div>
     </div>
 
   </div>
-  <br><br>
-  <h1 style="text-align: center; color: grey;">The magnitude of Problems you solve determines;
-    <br><br> Impact you make in society<br><br>
-    wealth and power you command
-  </h1>
-  <div style="display: flex; justify-content: center;">
-    <a href="problems.html">A quick look at the kind of problems our learners have to think and solve</a>
+
+  <!-- TEAM -->
+  <h1 id="team" style="text-align:center; color:grey;">Meet Our Team</h1>
+
+  <div style="display:flex; justify-content:space-around; flex-wrap:wrap; padding:3%; gap:20px;">
+    <div style="width:220px; text-align:center;">
+      <img src="CEO pic.jpeg" style="width:100%; height:220px; object-fit:contain; border-radius:50%;">
+      <h4>Mashia Abilba</h4>
+      <h4>Founder / CEO</h4>
+    </div>
+    <div style="width:220px; text-align:center;">
+      <img src="JOSHUA PIC.jpeg" style="width:100%; height:220px; object-fit:cover; border-radius:50%;">
+      <h4>Joshua Akweongo</h4>
+      <h4>Robotics Instructor</h4>
+    </div>
+    <div style="width:220px; text-align:center;">
+      <img src="CEO pic.jpeg" style="width:100%; height:220px; object-fit:cover; border-radius:50%;">
+      <h4>Sheila Abilba</h4>
+      <h4>Finance Lead</h4>
+    </div>
   </div>
 
-  <h1 style="text-align: center; color: grey;">Some Innovations by our learners</h1>
-  <br><br>
-  <div class="back-image">
-    <img src="nb-1.jpeg" alt="Logo" class="image1">
-    <img src="nb-5.jpeg" alt="Logo" class="image2">
-    <img src="EB1.jpeg" alt="Logo" class="image1">
-    <img src="EB1.jpeg" alt="Logo" class="image2">
-  </div>
+  <!-- FOOTER -->
+  <footer id="contact" style="background:#12686b; color:white; padding:3%; margin-top:40px;">
+
+    <div style="display:flex; justify-content:space-around; flex-wrap:wrap; gap:20px;">
+      <div>
+        <h3>NBOTI TECH INITIATIVE</h3>
+        <p>Empowering young minds through Robotics & Technology.</p>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <p>Email: nbotitechinitiative@gmail.com</p>
+        <p>Phone: +233 551 887 977</p>
+        <p>Bolgatanga, Ghana</p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <a href="#home" style="color:white;">Home</a><br>
+        <a href="#about" style="color:white;">About</a><br>
+        <a href="#services" style="color:white;">Services</a><br>
+        <a href="#team" style="color:white;">Team</a>
+      </div>
+    </div>
+
+    <hr style="margin:20px 0;">
+    <p style="text-align:center;">© 2026 Nboti Tech Initiative. All Rights Reserved.</p>
+  </footer>
+
+  <!-- SLIDESHOW SCRIPT -->
+  <script>
+    let slides = document.querySelectorAll(".slide");
+    let index = 0;
+    setInterval(() => {
+      slides[index].style.opacity = 0;
+      index = (index + 1) % slides.length;
+      slides[index].style.opacity = 1;
+    }, 3000);
+  </script>
 
 </body>
-
 
 </html>
